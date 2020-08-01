@@ -5,17 +5,45 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
+
 <body>
     <header>
-        <ul>
+        <div id="listen"><i>+</i></div> 
+        <ul id = "top">
             <li><a href="http://facebook.com">ONE</a></li>
             <li>TWO</li>
             <li>THREE</li>
+            <li>FOUR</li>
         </ul>
-        <svg class="bi" width="32" height="32" fill="currentColor"></svg>
+        
     </header>
-    
-
+    <nav id = "navbar">
+       <ul>
+           
+           <li>TWO</li>
+           <li>TWO</li>
+           <li>TWO</li>
+           <li>TWO</li>
+           <li>TWO</li>
+       </ul> 
+    </nav>
+    <script>       
+        function opent(){
+            
+        }
+        function closet(){ 
+            var a =  document.getElementById("navbar").style.display;
+            if(a == "none"){
+                document.getElementById("navbar").style.display="block";
+            }
+            else{
+                document.getElementById("navbar").style.display = "none";
+            }   
+            
+        }
+        document.getElementById("listen").addEventListener("click",closet);
+    </script>
 </body>
 </html>
