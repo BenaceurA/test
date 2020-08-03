@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #202020;
+  background-color: #000000;
+  height: 1vh;
 }
 
 header {
@@ -14,16 +15,32 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #202020;
+  background-color: #181818;
 }
 
 #listen {
   position: relative;
   width: 4.25em;
-  background-color: #323232;
+  background-color: #181818;
 }
 
 #listen i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#listen-click {
+  position: relative;
+  width: 4.25em;
+  background-color: #000000;
+}
+
+#listen-click i {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,7 +49,12 @@ header {
 }
 
 #listen:hover {
-  background-color: #191919;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+#listen-click:hover {
+  background-color: #000000;
   cursor: pointer;
 }
 
@@ -44,19 +66,18 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
-  background-color: #202020;
 }
 
 #top li {
-  background-color: #202020;
+  background-color: #181818;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #top li:hover {
-  background-color: #ff0000;
+  background-color: #000000;
   cursor: pointer;
 }
 
@@ -69,7 +90,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000000;
+  background-color: #181818;
   width: 4.25em;
 }
 
