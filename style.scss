@@ -6,11 +6,18 @@ $red : #ff0000;
     margin : 0;
     padding : 0;     
 }
+html{
+    height: 100%;
+    width: 100%;
+}
 body{
+    height: 100%;
+    width: 100%;
     background-color: $black;
-    height: 1vh;
+    
 }
 header{ 
+    
     display: flex;
     justify-content:space-between;
     background-color: $grey;
@@ -18,28 +25,15 @@ header{
 #listen{
     position: relative;
     width : 4.25em; 
+    
     background-color: $grey;
-    i{
-        color :white;
-        position: absolute;        
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
+
 }
 #listen-click{
     position: relative;
-    width : 4.25em; 
-    background-color: $black;
-    i{
-        color :white;
-        position: absolute;        
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
+    width : 4.25em;   
+    background-color: $grey;
 }
-
 #listen:hover{
     background-color: $black; 
     cursor: pointer;
@@ -51,8 +45,7 @@ header{
 #top{     
     display : flex;
     justify-content: flex-end;
-    list-style: none;
-    
+    list-style: none;    
     li{       
         background-color:  $grey;         
         padding-left: 1.5rem;
@@ -71,25 +64,38 @@ header{
     } 
 
 }
-#navbar{
-    display: flex;   
-    background-color:  $grey;
-    width: 4.25em;
-    li{               
-        
-        padding-left: 1rem;
-        padding-right : 1rem;
-        padding-top : 1rem;
-        padding-bottom: 1rem;
-        text-align: center;
-    } 
-    li:hover{
-        background-color:#ff0000;
-        cursor: pointer;
+#main{   
+    position: relative;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    div h1{
+        z-index: 0;            
     }
-    a ,li{
-        text-decoration: none;
-        color: white;
-    }  
+    #navbarshow{
+        display: block;   
+        background-color:  $grey;
+        position: absolute;
+        z-index: 1;
+        
+        li{               
+            padding-left: 1rem;
+            padding-right : 1rem;
+            padding-top : 1rem;
+            padding-bottom: 1rem;
+            list-style: none;
+        } 
+        li:hover{
+            background-color:#ff0000;
+            cursor: pointer;
+        }
+        a ,li{
+            text-decoration: none;
+            color: white;
+        }  
+    }
+    #navbarhide{       
+        display: none;       
+    }
 }
-

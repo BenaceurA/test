@@ -10,41 +10,35 @@
 
 <body>
     <header>
-        <div id="listen"><i>+</i></div> 
+        <div id="listen-click">     
+        </div>
+
+        
+         
         <ul id = "top">
             <li><a href="http://facebook.com">ONE</a></li>
             <li>TWO</li>
             <li>THREE</li>
             <li>FOUR</li>
-        </ul>
-        
-    </header>
-    <nav id = "navbar">
-       <ul>
-           
-           <li>TWO</li>
-           <li>TWO</li>
-           <li>TWO</li>
-           <li>TWO</li>
-           <li>TWO</li>
-       </ul> 
-    </nav>
-    <script>       
-        function closet(){ 
-            var a =  document.getElementById("navbar").style.display;
-            if(a == "none"){
-                document.getElementById("navbar").style.display="block";
-                document.getElementById("listen").id = "listen-click";
-                
-            }
-            else{
-                document.getElementById("navbar").style.display = "none";
-                document.getElementById("listen-click").id = "listen";
-            }            
-        }
-        
-        document.getElementById("listen").addEventListener("click",closet);
-
-    </script>
+        </ul>        
+    </header>    
+    <div id="main">
+        <div id="navbarhide">
+            <ul >          
+                <li>TWO</li>
+                <li>TWO</li>
+                <li>TWO</li>
+                <li>TWO</li>
+                <li>TWO</li>
+            </ul>     
+        </div>
+        <div> 
+            <h1>hello there</h1> 
+            
+        </div>
+             
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

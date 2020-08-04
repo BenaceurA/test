@@ -3,9 +3,15 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
+  height: 100%;
+  width: 100%;
   background-color: #000000;
-  height: 1vh;
 }
 
 header {
@@ -24,28 +30,10 @@ header {
   background-color: #181818;
 }
 
-#listen i {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 #listen-click {
   position: relative;
   width: 4.25em;
-  background-color: #000000;
-}
-
-#listen-click i {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  background-color: #181818;
 }
 
 #listen:hover {
@@ -86,29 +74,44 @@ header {
   color: white;
 }
 
-#navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #181818;
-  width: 4.25em;
+#main {
+  position: relative;
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-#navbar li {
+#main div h1 {
+  z-index: 0;
+}
+
+#main #navbarshow {
+  display: block;
+  background-color: #181818;
+  position: absolute;
+  z-index: 1;
+}
+
+#main #navbarshow li {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center;
+  list-style: none;
 }
 
-#navbar li:hover {
+#main #navbarshow li:hover {
   background-color: #ff0000;
   cursor: pointer;
 }
 
-#navbar a, #navbar li {
+#main #navbarshow a, #main #navbarshow li {
   text-decoration: none;
   color: white;
+}
+
+#main #navbarhide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
